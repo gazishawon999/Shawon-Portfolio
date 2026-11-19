@@ -1,0 +1,559 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- SEO -->
+    <title>
+      Shawon Gazi — Computer Science Student &amp; Aspiring Software Developer
+    </title>
+    <meta
+      name="description"
+      content="Portfolio of Shawon Gazi, a Computer Science and Engineering student and aspiring software developer. Explore projects, skills, education, and learning journey."
+    />
+    <meta name="theme-color" content="#090B10" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Shawon Gazi" />
+
+    <!-- Open Graph / social sharing -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Shawon Gazi — Computer Science Student &amp; Aspiring Software Developer"
+    />
+    <meta
+      property="og:description"
+      content="Personal developer portfolio featuring projects, technical skills, education, and a continuous learning journey."
+    />
+    <meta property="og:image" content="assets/images/profile.jpg" />
+    <meta
+      property="og:image:alt"
+      content="Professional portrait of Shawon Gazi"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Shawon Gazi — Computer Science Student &amp; Aspiring Software Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Portfolio of Shawon Gazi, a Computer Science and Engineering student and aspiring software developer. Explore projects, skills, education, and learning journey."
+    />
+    <meta name="twitter:image" content="assets/images/profile.jpg" />
+    <meta
+      name="twitter:image:alt"
+      content="Professional portrait of Shawon Gazi"
+    />
+
+    <!-- Favicons -->
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+    <!-- Google Fonts: Plus Jakarta Sans, Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Devicon CDN for authentic colored tech skill icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <!-- Theme must be applied before first paint -->
+    <script src="js/theme-init.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+    <!-- ============================================================
+       1. NAVIGATION
+       ============================================================ -->
+    <header class="site-header" id="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="Shawon Gazi — home">
+          <span class="brand-mark" aria-hidden="true">SG</span>
+          <span class="brand-name" data-bind="personalInfo.name"
+            >Shawon Gazi</span
+          >
+        </a>
+
+        <nav
+          class="primary-nav"
+          id="primary-nav"
+          aria-label="Primary navigation"
+        >
+          <ul class="nav-list" role="list">
+            <li>
+              <a class="nav-link is-active" href="#home" aria-current="location"
+                >Home</a
+              >
+            </li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#education">Education</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            type="button"
+            aria-label="Toggle theme"
+            aria-pressed="false"
+          >
+            <svg
+              class="icon icon-moon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z"
+                fill="currentColor"
+              />
+            </svg>
+            <svg
+              class="icon icon-sun"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <g
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+              >
+                <path
+                  d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6 7 7M17 17l1.4 1.4M18.4 5.6 17 7M7 17l-1.4 1.4"
+                />
+                <circle cx="12" cy="12" r="4" />
+              </g>
+            </svg>
+          </button>
+
+          <button
+            class="nav-toggle"
+            id="nav-toggle"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-controls="primary-nav"
+            aria-expanded="false"
+          >
+            <span class="nav-toggle-bar" aria-hidden="true"></span>
+            <span class="nav-toggle-bar" aria-hidden="true"></span>
+            <span class="nav-toggle-bar" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ============================================================
+         2. HERO
+         ============================================================ -->
+      <section class="section hero" id="home" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <div class="hero-badges">
+              <p class="eyebrow">
+                <span class="eyebrow-dot" aria-hidden="true"></span>
+                <span data-bind="personalInfo.location">Dhaka, Bangladesh</span>
+              </p>
+            </div>
+
+            <h1 class="hero-title" id="hero-title">
+              Hi, I'm
+              <span class="text-gradient" data-bind="personalInfo.name"
+                >Shawon Gazi</span
+              >
+            </h1>
+
+            <p class="hero-headline" data-bind="personalInfo.headline">
+              Computer Science Student | Aspiring Software Developer
+            </p>
+
+            <!-- NEW: Typing effect line -->
+            <p class="hero-typing" aria-live="polite">
+              <span class="typing-prefix">I build with </span
+              ><span class="typing-text" id="typing-text">JavaScript</span
+              ><span class="typing-cursor" aria-hidden="true">|</span>
+            </p>
+
+            <p class="hero-intro" data-bind="personalInfo.introduction">
+              I am a Computer Science and Engineering student passionate about
+              web development and software engineering. I enjoy building
+              practical applications, exploring new technologies, and solving
+              problems through programming.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">
+                View Projects
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M5 12h14m-6-6 6 6-6 6"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+
+              <a
+                class="btn btn-secondary"
+                href="assets/Shawon_Gazi_Resume_Updated.pdf"
+                download="Shawon_Gazi_Resume_Updated.pdf"
+                data-bind-href="personalInfo.resumeUrl"
+              >
+                Download Resume
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M12 3v12m0 0 4-4m-4 4-4-4M4 19h16"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+
+              <a class="btn btn-ghost" href="#contact">Contact Me</a>
+            </div>
+
+            <nav class="hero-socials" aria-label="Hero social links">
+              <a
+                class="social-link"
+                href="https://github.com/gazishawon999/"
+                data-bind-href="socialLinks.github"
+                aria-label="GitHub profile (opens in a new tab)"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55v-1.93c-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.24 2.75.12 3.04.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .3.21.67.8.55A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+              <a
+                class="social-link"
+                href="https://www.linkedin.com/in/gazishawon999/"
+                data-bind-href="socialLinks.linkedin"
+                aria-label="LinkedIn profile (opens in a new tab)"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .78 0 1.74v20.52C0 23.22.79 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.74V1.74C24 .78 23.2 0 22.22 0z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </nav>
+          </div>
+
+          <div class="hero-visual">
+            <figure class="hero-portrait" data-image-fallback>
+              <div class="portrait-glow" aria-hidden="true"></div>
+              <div class="profile-placeholder" aria-hidden="true">
+                <span>SG</span>
+              </div>
+              <img
+                src="assets/images/profile.jpg"
+                data-bind-src="personalInfo.profileImage"
+                alt="Professional portrait of Shawon Gazi"
+                data-bind-alt="personalInfo.profileImageAlt"
+                width="360"
+                height="360"
+                decoding="async"
+                loading="eager"
+                fetchpriority="high"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         3. ABOUT
+         ============================================================ -->
+      <section class="section" id="about" aria-labelledby="about-heading">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-label">01 / About</p>
+            <h2 id="about-heading">A little about me</h2>
+            <p class="section-subtitle">
+              My background, interests, and how I got into development.
+            </p>
+          </header>
+
+          <div class="about-grid">
+            <div class="about-copy" data-render="about"></div>
+            <aside class="about-aside" data-render="about-aside"></aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         4. TECHNICAL SKILLS
+         ============================================================ -->
+      <section class="section" id="skills" aria-labelledby="skills-heading">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-label">02 / Skills</p>
+            <h2 id="skills-heading">Technical skills</h2>
+            <p class="section-subtitle">
+              Tools and technologies I have worked with, and the ones I am
+              learning now.
+            </p>
+          </header>
+
+          <div class="skills-grid" data-render="skills"></div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         5. FEATURED PROJECTS
+         ============================================================ -->
+      <section class="section" id="projects" aria-labelledby="projects-heading">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-label">03 / Projects</p>
+            <h2 id="projects-heading">Featured projects</h2>
+            <p class="section-subtitle">
+              A selection of applications I have built while learning and
+              practising development.
+            </p>
+          </header>
+
+          <div class="projects-grid" data-render="projects"></div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         6. EDUCATION
+         ============================================================ -->
+      <section
+        class="section"
+        id="education"
+        aria-labelledby="education-heading"
+      >
+        <div class="container">
+          <header class="section-header">
+            <p class="section-label">04 / Education</p>
+            <h2 id="education-heading">Education</h2>
+            <p class="section-subtitle">My academic background so far.</p>
+          </header>
+
+          <div class="timeline" data-render="education"></div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         7. LEARNING JOURNEY
+         ============================================================ -->
+      <section class="section" id="learning" aria-labelledby="learning-heading">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-label">05 / Learning Journey</p>
+            <h2 id="learning-heading">Learning journey</h2>
+            <p class="section-subtitle">
+              A simple progression of the skills I have explored and where I am
+              focused today.
+            </p>
+          </header>
+
+          <ol class="learning-grid" role="list" data-render="learning"></ol>
+        </div>
+      </section>
+
+      <!-- ============================================================
+         8. CONTACT
+         ============================================================ -->
+      <section class="section" id="contact" aria-labelledby="contact-heading">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-label">06 / Contact</p>
+            <h2 id="contact-heading">Let's connect</h2>
+            <p class="section-subtitle">
+              The best way to reach me is by email. You can also find me on
+              GitHub and LinkedIn.
+            </p>
+          </header>
+
+          <div class="contact-grid">
+            <div class="contact-details" data-render="contact"></div>
+
+            <form class="contact-form spotlight-card" id="contact-form">
+              <h3>Send a message</h3>
+              <p class="form-note" id="contact-form-note">
+                This form opens your email app with a prefilled message.
+              </p>
+
+              <div class="field">
+                <label for="contact-name">Your name</label>
+                <input
+                  id="contact-name"
+                  name="name"
+                  type="text"
+                  placeholder="John Doe"
+                  autocomplete="name"
+                  required
+                  aria-describedby="contact-form-note"
+                />
+              </div>
+
+              <div class="field">
+                <label for="contact-email">Your email</label>
+                <input
+                  id="contact-email"
+                  name="email"
+                  type="email"
+                  placeholder="john@example.com"
+                  autocomplete="email"
+                  required
+                  aria-describedby="contact-form-note"
+                />
+              </div>
+
+              <div class="field">
+                <label for="contact-message">Message</label>
+                <textarea
+                  id="contact-message"
+                  name="message"
+                  rows="5"
+                  placeholder="Hi Shawon, I'd like to talk about..."
+                  required
+                  aria-describedby="contact-form-note"
+                ></textarea>
+              </div>
+
+              <button class="btn btn-primary" type="submit">
+                Open Email App
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M3 6h18v12H3zM3 6l9 7 9-7"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================================
+       9. FOOTER
+       ============================================================ -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a
+              class="brand"
+              href="#home"
+              aria-label="Shawon Gazi — back to top"
+            >
+              <span class="brand-mark" aria-hidden="true">SG</span>
+              <span class="brand-name" data-bind="personalInfo.name"
+                >Shawon Gazi</span
+              >
+            </a>
+            <p data-bind="personalInfo.headline">
+              Computer Science Student | Aspiring Software Developer
+            </p>
+          </div>
+
+          <nav
+            class="footer-socials"
+            aria-label="Footer social links"
+            data-render="footer-socials"
+          ></nav>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="year">2026</span>
+            <span data-bind="personalInfo.name">Shawon Gazi</span>. All rights
+            reserved.
+          </p>
+          <button
+            class="back-to-top"
+            id="back-to-top"
+            type="button"
+            aria-label="Back to top"
+          >
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M12 19V5m0 0-6 6m6-6 6 6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            Back to top
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Toast notification for copy email feedback -->
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
