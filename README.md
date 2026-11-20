@@ -15,15 +15,13 @@
 
 ## 🌐 Live Preview
 
-🔗 **Live Website:** [Visit My Portfolio](YOUR_LIVE_PORTFOLIO_URL)
+🔗 **Live Website:** [Visit My Portfolio](https://gazishawon999.github.io/Shawon-Portfolio)
 
 <!-- Add your portfolio screenshot here after deployment -->
 
-<!--
 <p align="center">
   <img src="assets/images/portfolio-preview.png" alt="Portfolio Website Preview" width="100%" />
 </p>
--->
 
 ## 👋 About Me
 
@@ -73,26 +71,33 @@ Shawon-Portfolio/
 │
 ├── css/
 │   └── style.css
-│
 ├── js/
 │   ├── data.js
-│   └── script.js
-│
+│   ├── script.js
+│   └── theme-init.js
 ├── assets/
 │   ├── images/
 │   ├── icons/
 │   └── Shawon-Gazi-Resume.pdf
 │
 ├── favicon.ico
-├── README.md
-└── .gitignore
+└── README.md
 ```
 
 ## 🚀 Featured Projects
 
 Here are some of my selected projects:
 
-### 1. BazarDor
+### 1. StudioSpace
+
+A full-stack workspace and studio booking platform featuring authentication, studio management, booking management, and dashboards.
+
+- **Technologies:** Next.js, TypeScript, Node.js, Express.js, MongoDB, Better Auth
+- **Live Demo:** [Visit Website](https://studiospace-client-orpin.vercel.app/)
+- **GitHub:** [View Client Side Repository](https://github.com/gazishawon999/studiospace-client)
+- **GitHub:** [View Server Side Repository](https://github.com/gazishawon999/studiospace-server)
+
+### 2. BazarDor
 
 A daily market price tracking application that helps users explore products, categories, and market-related information.
 
@@ -100,24 +105,18 @@ A daily market price tracking application that helps users explore products, cat
 - **Live Demo:** [Visit Website](https://bazar-dor-h23v.vercel.app/)
 - **GitHub:** [View Repository](https://github.com/gazishawon999/bazar-dor)
 
-### 2. Dev Stack Builder
+### 3. Dev Stack Builder
 
 A React-based technology catalog application developed as part of my Programming Hero assignment.
 
 - **Technologies:** React, TypeScript, Vite, Tailwind CSS
 - **Live Demo:** [Visit Website](https://b14-a05-react-git-main-gazishawon999.vercel.app/)
 
-### 3. StudioSpace
-
-A full-stack workspace and studio booking platform featuring authentication, studio management, booking management, and dashboards.
-
-- **Technologies:** Next.js, TypeScript, Node.js, Express.js, MongoDB, Better Auth
-
-### 4. Circling the Globe
+<!-- ### 4. Circling the Globe
 
 A university database management system project featuring country-related information, interactive quizzes, user authentication, and database integration.
 
-- **Technologies:** React, Node.js, SQL
+- **Technologies:** React, Node.js, SQL -->
 
 ## 📚 Currently Learning
 
