@@ -121,8 +121,32 @@ export const portfolioData = {
 
   projects: [
     {
-      id: "bazardor",
+      id: "studiospace",
       index: "01",
+      title: "StudioSpace",
+      description:
+        "A full-stack workspace and studio booking platform featuring user authentication, studio management, booking management, and user dashboards.",
+      image: "assets/images/studiospace.png",
+      imageAlt: "StudioSpace booking platform interface",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Better Auth",
+        "JWT",
+      ],
+      links: {
+        live: "https://studiospace-client-orpin.vercel.app",
+        github: "https://github.com/gazishawon999/studiospace-client",
+      },
+    },
+    {
+      id: "bazardor",
+      index: "02",
       title: "BazarDor",
       description:
         "A Bengali daily market price tracking application that allows users to explore products, categories, and market-related information.",
@@ -142,10 +166,10 @@ export const portfolioData = {
     },
     {
       id: "nexmeet-video-conferencing",
-      index: "02",
+      index: "03",
       title: "🎥 NexMeet — Private Video Conferencing Platform",
       description:
-        "NexMeet is a fast, open-source video conferencing platform built with Next.js, LiveKit, and Tailwind CSS, allowing users to create and join private meetings instantly without registration or login using a custom nickname.",
+        "A real-time video conferencing platform featuring private meeting rooms, HD video calls, screen sharing, live chat, and advanced host controls—all without requiring user registration or login.",
       image: "assets/images/nexmeet-video-conferencing.png",
       imageAlt: "NexMeet video conferencing platform interface",
       technologies: [
@@ -162,27 +186,7 @@ export const portfolioData = {
         github: "https://github.com/gazishawon999/my-meet-app",
       },
     },
-    {
-      id: "studiospace",
-      index: "03",
-      title: "StudioSpace",
-      description:
-        "A full-stack workspace and studio booking platform featuring user authentication, studio management, booking management, and user dashboards.",
-      image: "assets/images/studiospace.png",
-      imageAlt: "StudioSpace booking platform interface",
-      technologies: [
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "shadcn/ui",
-        "Node.js",
-        "Express.js",
-        "MongoDB",
-        "Better Auth",
-        "JWT",
-      ],
-      links: { live: null, github: null },
-    },
+
     {
       id: "fitness-management-system",
       index: "04",
